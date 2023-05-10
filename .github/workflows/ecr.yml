@@ -12,11 +12,11 @@ jobs:
     name: Build Image
     runs-on: ubuntu-latest
 
-    # steps:
-    #   - name: Set environment variables
-    #     run: |
-    #       echo "ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}" >> $GITHUB_ENV
-    #       echo "ECR_REPOSITORY=img-tf" >> $GITHUB_ENV
+    steps:
+      #   - name: Set environment variables
+      #     run: |
+      #       echo "ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}" >> $GITHUB_ENV
+      #       echo "ECR_REPOSITORY=img-tf" >> $GITHUB_ENV
 
       - name: Check out the repo
         uses: actions/checkout@v2
