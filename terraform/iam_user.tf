@@ -17,7 +17,8 @@ resource "aws_iam_policy" "my_user_policy" {
           "ecr:GetDownloadUrlForLayer",
           "ecr:InitiateLayerUpload",
           "ecr:PutImage",
-          "ecr:UploadLayerPart"
+          "ecr:UploadLayerPart",
+          "ecr:CreateRepository"
         ],
         "Resource": "*"
       }
